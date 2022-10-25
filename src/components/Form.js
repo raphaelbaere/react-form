@@ -20,7 +20,7 @@ export default class Form extends Component {
     }
   };
 
-  handleValue = () => {
+  handleValue = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value,
